@@ -12,6 +12,11 @@
         <form id="routine-form">
             <input type="text" id="routine-input" placeholder="Neue Routine hinzufügen" required>
             <input type="time" id="reminder-time" placeholder="Erinnerungszeit">
+            <select id="priority">
+                <option value="low">Niedrig</option>
+                <option value="medium">Mittel</option>
+                <option value="high">Hoch</option>
+            </select>
             <button type="submit">Hinzufügen</button>
         </form>
         <div class="filter-buttons">
@@ -24,14 +29,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-<form id="routine-form">
-    <input type="text" id="routine-input" placeholder="Neue Routine hinzufügen" required>
-    <input type="time" id="reminder-time" placeholder="Erinnerungszeit">
-    <select id="priority">
-        <option value="low">Niedrig</option>
-        <option value="medium">Mittel</option>
-        <option value="high">Hoch</option>
-    </select>
-    <button type="submit">Hinzufügen</button>
-</form>
