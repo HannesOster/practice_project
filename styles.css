@@ -111,3 +111,12 @@ li .complete-btn {
 li .complete-btn:hover {
     background: #218838;
 }
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
