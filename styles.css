@@ -11,9 +11,9 @@ body {
 .container {
     background: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
 }
 
 h1 {
@@ -22,28 +22,51 @@ h1 {
 
 form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-input {
-    width: 70%;
+input[type="text"], input[type="time"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: calc(100% - 22px);
 }
 
 button {
-    width: 25%;
     padding: 10px;
     background: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-self: flex-end;
 }
 
 button:hover {
     background: #218838;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background: #0056b3;
 }
 
 ul {
@@ -65,4 +88,26 @@ li {
 li.completed {
     text-decoration: line-through;
     color: #777;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+li .complete-btn {
+    background: #28a745;
+}
+
+li .complete-btn:hover {
+    background: #218838;
 }
