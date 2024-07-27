@@ -27,7 +27,7 @@ form {
     margin-bottom: 20px;
 }
 
-input[type="text"], input[type="time"] {
+input[type="text"], input[type="time"], select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -65,7 +65,7 @@ button:hover {
     cursor: pointer;
 }
 
-.filter-buttons button:hover {
+filter-buttons button:hover {
     background: #0056b3;
 }
 
@@ -112,11 +112,17 @@ li .complete-btn:hover {
     background: #218838;
 }
 
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
+.low {
+    border-left: 5px solid green;
+}
+
+.medium {
+    border-left: 5px solid orange;
+}
+
+.high {
+    border-left: 5px solid red;
+}
+
 }
 
